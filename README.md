@@ -18,15 +18,6 @@ This project performs edge detection on images from the BSDS500 dataset using bo
 
 ## 🔗 Main Project Notebook
  [Link to main project code](http://localhost:8888/lab/tree/AI_UGA/AIUGA_assin1.ipynb)
-
-
-## 📦 Dependencies
-Make sure you have the following packages installed:
-```bash
-pip install torch torchvision matplotlib opencv-python pillow
-
-Also ensure you are running this in a PyTorch-enabled environment (e.g., pytorch-env in JupyterLab).
-
 🔍 Classical Edge Detection
 
 The classical edge detection is done via OpenCV:
@@ -64,6 +55,13 @@ Squeeze is used to remove unnecessary dimensions from predictions
 🤝 Contributing
 
 Pull requests and suggestions are welcome!
+
+## 📦 Dependencies
+Make sure you have the following packages installed:
+```bash
+pip install torch torchvision matplotlib opencv-python pillow
+
+Also ensure you are running this in a PyTorch-enabled environment (e.g., pytorch-env in JupyterLab).
 
 
 
