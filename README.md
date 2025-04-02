@@ -18,6 +18,25 @@ This project performs edge detection on images from the BSDS500 dataset using bo
 
 ## 🔗 Main Project Notebook
  [Link to main project code](http://localhost:8888/lab/tree/AI_UGA/AIUGA_assin1.ipynb)
+ > **Note**: This link will only work locally on your machine while JupyterLab is running.
+
+## ⚠️ Current Issue with Model Predictions
+
+While the classical edge detection methods (like Canny and Sobel) produced visible edge maps, the deep learning predictions from the U-Net model were **all black**. This means the model predicted a mask with zero or very low activation everywhere.
+
+### Observations:
+- The **raw logits** from the model were all close to `-0.09`, indicating very low confidence.
+- After applying `sigmoid`, the output values were still extremely low (near 0).
+- Thresholding at `0.5` resulted in an all-black binary mask.
+- This suggests either:
+  - There's a mismatch between input image preprocessing and what the model expects.
+  - The model might be overfitting to negative/no-edge examples or underfitting in general.
+
+I am currently investigating how to improve model performance by:
+- Verifying model training,
+- Adjusting preprocessing (e.g., resizing, normalization),
+- Tweaking the thresholding step.
+
 🔍 Classical Edge Detection
 
 The classical edge detection is done via OpenCV:
