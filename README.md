@@ -1,4 +1,4 @@
-# AI_UGA_TakeHomeAssignment: Edge Detection using U-Net and Classical Methods
+# AI_UGA: Edge Detection using U-Net and Classical Methods
 # Edge Detection using U-Net and Classical Methods
 
 This project performs edge detection on images from the BSDS500 dataset using both classical computer vision methods (Sobel, Canny) and a deep learning approach (U-Net). The goal is to compare traditional edge detection techniques with the results from a U-Net trained for edge segmentation.
