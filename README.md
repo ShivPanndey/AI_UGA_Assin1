@@ -52,7 +52,6 @@ Display handled with matplotlib
 Ensure your model is loaded properly and matches the image dimensions
 Raw logits from the model are passed through sigmoid before thresholding
 Squeeze is used to remove unnecessary dimensions from predictions
-🤝 Contributing
 
 Pull requests and suggestions are welcome!
 
